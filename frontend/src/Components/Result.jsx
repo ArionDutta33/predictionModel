@@ -2,11 +2,8 @@ import React from 'react';
 
 const Result = () => {
     return (
-        <div className="result bg-zinc-600 mx-6 px-4 py-4 mt-10 rounded-xl">
-           Conditionally render result
-            <div className=" text-zinc-400 py-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, soluta.
-            </div>
+        <div className="mt-6 text-white text-center">
+            <p className="text-lg sm:text-xl">Prediction Result: <span className="font-bold text-blue-400">Healthy</span></p>
         </div>
     );
 };

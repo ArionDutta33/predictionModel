@@ -1,18 +1,28 @@
+// Footer.jsx
 import React from 'react';
+
+const teamMembers = [
+    'Member1', 'Member2', 'Member3', 'Member4', 'Member5', 'Member6'
+
+];
 
 const Footer = () => {
     return (
-        <div className="footer mt-8 bg-zinc-600  border-t-[1px]  ">
-            <div className="text-center py-4 px-2 font-medium text-xl text-zinc-300">Team Members</div>
-            <div className="members   border-gray-200 px-6 py-6 justify-around gap-4  flex flex-wrap">
-                <span>Member1</span>
-                <span>Member1</span>
-                <span>Member1</span>
-                <span>Member1</span>
-                <span>Member1</span>
-                <span>Member1</span>
+        <footer className="bg-gray-800 text-white py-4 mt-12">
+            <div className="text-center font-medium text-xl text-gray-300 mb-2">
+                Team Members
             </div>
-        </div>
+            <div className="flex flex-wrap justify-center items-center gap-2 bg-gray-700 p-4">
+                {teamMembers.map((member, index) => (
+                    <span
+                        key={index}
+                        className="text-center text-gray-300 px-4 py-2 rounded bg-gray-600 hover:bg-gray-500 transition-colors text-sm md:text-base lg:text-lg"
+                    >
+                        {member}
+                    </span>
+                ))}
+            </div>
+        </footer>
     );
 };
 

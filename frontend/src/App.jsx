@@ -1,20 +1,20 @@
 import React from 'react';
-import Navbar from "./Components/Navbar.jsx";
-import HeroText from "./Components/HeroText.jsx";
-import ImageUpload from "./Components/ImageUpload.jsx";
-import Result from "./Components/Result.jsx";
-import Footer from "./Components/Footer.jsx";
-
+import Navbar from './Components/Navbar';
+import HeroText from './Components/HeroText';
+import ImageUpload from './Components/ImageUpload';
+import Result from './Components/Result';
+import Footer from './Components/Footer';
 
 const App = () => {
     return (
-        <div
-            className="absolute top-0 z-[-2] min-h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
-            <Navbar/>
-            <HeroText/>
-            <ImageUpload/>
-            <Result/>
-            <Footer/>
+        <div className="min-h-screen flex flex-col justify-between bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
+            <Navbar />
+            <main className="flex-grow container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
+                <HeroText />
+                <ImageUpload />
+                <Result />
+            </main>
+            <Footer />
         </div>
     );
 };
