@@ -68,9 +68,9 @@ try{
     console.log("Received body:", req.body);
 
     const{result}=req.body;
-    if(!result) {
-        return res.status(404).json(new ApiError(404,"Please enter all the fields"));
-    }
+    // if(!result) {
+    //     return res.status(404).json(new ApiError(404,"Please enter all the fields"));
+    // }
     // console.log(req.files);
     const sampleImage=req.files?.mainImage[0]?.path
     if(!sampleImage){

@@ -6,7 +6,7 @@ const predictionSchema = new mongoose.Schema({
     },
     result: {
         type: String,
-        required: true,
+        // required: true,
     }
 }, { timestamps: true })
 
