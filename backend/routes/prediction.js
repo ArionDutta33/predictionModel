@@ -6,7 +6,7 @@ import {upload} from "../middlewares/multer.js";
 const router = express.Router();
 router.get('/',getPredictions);
 router.post("/",upload.fields([
-    {name:"mainImage",maxCount:4}
+    {name:"mainImage",maxCount:1}
 ]),createPrediction)
 
 export default router;
