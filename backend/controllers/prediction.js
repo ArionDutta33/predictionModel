@@ -71,6 +71,7 @@ try{
     if(!result) {
         return res.status(404).json(new ApiError(404,"Please enter all the fields"));
     }
+    // console.log(req.files);
     const sampleImage=req.files?.mainImage[0]?.path
     if(!sampleImage){
         return res.status(404).json(new ApiError(404,"Image is required"));
