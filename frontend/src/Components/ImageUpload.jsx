@@ -18,9 +18,9 @@ const ImageUpload = () => {
 
             // Send the file data to your backend API using a POST request
             const formData = new FormData();
-            formData.append('image', selectedFile);
+            formData.append('mainImage', selectedFile);
 
-            fetch('your_backend_api_url', {
+            fetch('/api/v1/', {
                 method: 'POST',
                 body: formData
             })
